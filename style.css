@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Press+Start+2P&display=swap');
+
+body{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top:35vh;
+        font-size: 85px;
+        font-family: 'Press Start 2P', cursive;
+        color: yellow;
+
+        background-image: url("background.jpeg");
+
+        object-fit: fill;
+}
+
+
+a{
+    color: blue;
+}
+
+
+video
+{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
