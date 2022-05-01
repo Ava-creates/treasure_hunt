@@ -5,7 +5,7 @@ body{
         position: relative;
         display: flex;
         justify-content: center;
-        top:35vh;
+        
         font-size: 85px;
         font-family: 'Press Start 2P', cursive;
         /* color: yellow; */
@@ -22,7 +22,6 @@ a{
 }
 
 
-
 video
 {
     display: block;
@@ -31,7 +30,8 @@ video
 }
 
 .wrapper {
-    
+    position: relative;
+    top:35vh;
     /*This part is important for centering*/
     display: flex;
     align-items: center;
@@ -59,12 +59,26 @@ video
     }
   }
 
+#play
+{
+    position: relative;
+    top: 30vh;
+    text-align: center;
+}
 
-  .b
-  {
-      
-      display: block;
-      background-color: blue;
+#buttons
+{
+    display: flex;
+    justify-content: center;
 
-        
-    }
+}
+
+#yes
+{
+    padding: 60px;
+}
+
+#no
+{
+    padding: 60px;
+}
