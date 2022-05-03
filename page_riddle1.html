@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script scr="script_riddles.js"defer></script>
+    <script src="script_riddles.js"defer></script>
     <link rel="stylesheet" href="style_riddle.css">
     <title></title>
   </head>
@@ -20,11 +20,21 @@
         </div>
 
     <input type="text" id="answer" name="answer">
+    <div class = "errors" >
+    <span role="alert" id="emptyAnswer" aria-hidden="true">
+   Don't leave it empty!
+ </span>
+ <span role="alert" id="incorrectAnswer" aria-hidden="true">
+Incorrect answer!
+</span>
+<span role="alert" id="correctAnswer" aria-hidden="true">
+That's correct! Good Job!
+</span>
+</div>
   </form>
-   <p id="message"></p>
     </div>
     <div id="submitButton">
-      <button class="submitButton" role="button">Submit</button>
+      <button type="button" class="submitButton" role="button">Submit</button>
     </div>
 </div>
   </body>

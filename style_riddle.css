@@ -115,3 +115,46 @@ input:valid {
     border-color: transparent
   }
 }
+
+#emptyAnswer {
+  display: none;
+  font-size: 0.8em;
+  color: lightpink;
+  -webkit-text-stroke: 2px #3A3B3C; 
+}
+
+#emptyAnswer.visible {
+  display: block;
+}
+
+input.invalid {
+  border-color: red;
+}
+#incorrectAnswer {
+  display: none;
+  font-size: 0.8em;
+  color: lightsalmon;
+  -webkit-text-stroke: 2px #3A3B3C;
+}
+
+#incorrectAnswer.visible {
+  display: block;
+}
+
+input.invalid {
+  border-color: red;
+}
+#correctAnswer {
+  display: none;
+  font-size: 0.8em;
+  color:lightgreen;
+  -webkit-text-stroke: 2px #3A3B3C;
+}
+
+#correctAnswer.visible {
+  display: block;
+}
+
+input.valid {
+  border-color: chartreuse;
+}
