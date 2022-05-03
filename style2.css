@@ -1,21 +1,98 @@
-.b
-{
-    display:inline-block;
-    padding-right: 410px;
-    border:0.1em solid ;
-    margin:0 0.3em 0.3em 0;
-    
-    border-radius:0.12em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    color:blue;
-    text-align:center;
-    transition: all 0.2s;
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Press+Start+2P&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #919492;
+
 }
 
-.b:hover{
-    color:#000000;
-    background-color:#FFFFFF;
+video
+{
+    position: relative;
+    top: 8vh;
+    left: 5vw;
+    right: 5vw;
+   
+}
+
+button{
+    
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Press Start 2P', cursive;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: absolute;
+    
+    bottom: 10vh;
+    z-index: 1; 
+    
+   
+    text-align: center; 
+   
+    
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 35px;
+
+    visibility: hidden;
+  }
+  
+  button:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+  .video:hover button{
+    visibility: visible;
+   
+}
+
+
+  
+#previous{
+    
+    display:flex;
+    left: 9.5vw;    
+}
+
+#next{
+    display:flex;
+    left: 78.5vw;    
+}
+
+#play
+{
+    display:flex;
+    left: 47vw;
 }

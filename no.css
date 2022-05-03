@@ -1,23 +1,5 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Press+Start+2P&display=swap');
-
-body{
-    display: flex;
-    justify-content: center;
-    background-color: #919492;
-
-}
-
-video
-{
-    position: relative;
-    top: 8vh;
-    left: 5vw;
-    right: 5vw;
-   
-}
-button{
-    
+.submitButton {
+    top:50px;
     align-items: center;
     appearance: none;
     background-color: #FCFCFD;
@@ -36,14 +18,7 @@ button{
     overflow: hidden;
     padding-left: 16px;
     padding-right: 16px;
-    position: absolute;
-    left: 59vw;
-    bottom: 10vh;
-    z-index: 1; 
-   
-    text-align: center; 
-    visibility: hidden;
-    
+    position: relative;
     text-align: left;
     text-decoration: none;
     transition: box-shadow .15s,transform .15s;
@@ -55,35 +30,17 @@ button{
     font-size: 35px;
   }
   
-  button:focus {
+  .submitButton:focus {
     box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   }
   
-  button:hover {
+  .submitButton:hover {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     transform: translateY(-2px);
   }
   
-  button:active {
+  .submitButton:active {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
   }
   
-
-
-
-.video:hover button{
-    visibility: visible;
-    display: block;
-}
-
-button:hover{
-    visibility: visible;
-    display: block;
-}
-
-#play
-{
-    display:flex;
-    left: 9.5vw;
-}
