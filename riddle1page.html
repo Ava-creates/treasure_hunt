@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script scr="script.js"defer></script>
     <link rel="stylesheet" href="style.css">
     <title></title>
   </head>
@@ -12,7 +13,12 @@
     </div>
    <div class="answerform">
       <form>
-    <label for="answer">Your Answer:</label>
+        <div class="wrapper">
+            <div class="typing-demo">
+              <label for="answer">Your Answer:</label>
+            </div>
+        </div>
+
     <input type="text" id="answer" name="answer">
   </form>
     </div>
@@ -20,6 +26,5 @@
       <button class="submitButton" role="button">Submit</button>
     </div>
 </div>
-
   </body>
 </html>

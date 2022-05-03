@@ -8,7 +8,7 @@ body{
         top:35vh;
         font-size: 85px;
         font-family: 'Press Start 2P', cursive;
-        color: yellow;
+
 
         background-image: url("background.jpeg");
 
@@ -17,6 +17,7 @@ body{
 
 a{
     color: blue;
+
 }
 
 video
@@ -26,7 +27,37 @@ video
     width: 100vw;
 }
 
+.wrapper {
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(10), blink .5s step-end  alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
 .riddleContainer {
+  color: yellow; 
   position: relative;
   font-size: 60px;
   text-align: center;
