@@ -1,0 +1,18 @@
+.buttons{
+    position: absolute;
+    right: 80 ;
+    bottom: 0;
+    z-index: 1; 
+    right: 0;
+    text-align: center; 
+    visibility: hidden;
+    
+    
+}
+
+.video:hover .buttons{
+
+    visibility: visible;
+
+    display: block;
+}
