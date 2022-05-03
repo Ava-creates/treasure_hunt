@@ -16,7 +16,7 @@ body{
 }
 
 a{
-    color: blue;
+  color: blue;
 
 }
 
@@ -28,8 +28,9 @@ video
 }
 
 .wrapper {
-    position:relative;
+    position: relative;
     top:35vh;
+
     /*This part is important for centering*/
     display: flex;
     align-items: center;
@@ -38,7 +39,7 @@ video
 
   .typing-demo {
     width: 22ch;
-    animation: typing 2s steps(9), blink .5s step-end  alternate;
+    animation: typing 2s steps(10), blink .5s step-end  alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -62,4 +63,31 @@ video
     position: relative;
     top: 30vh;
     text-align: center;
+}
+
+#buttons
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+#yes
+{
+    padding: 60px;
+}
+
+#no
+{
+    padding: 60px;
+
+
+}
+
+#no_page
+{
+  position: relative;
+  top: 30vh;
+  text-align: center;
+  color: blue;
 }
