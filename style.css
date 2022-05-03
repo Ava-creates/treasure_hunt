@@ -5,7 +5,7 @@ body{
         position: relative;
         display: flex;
         justify-content: center;
-        top:35vh;
+        
         font-size: 85px;
         font-family: 'Press Start 2P', cursive;
 
@@ -20,6 +20,10 @@ a{
 
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6249c458dca7eeb0e59a49db8fd9b1cb67ce6824
 video
 {
     display: block;
@@ -28,6 +32,11 @@ video
 }
 
 .wrapper {
+<<<<<<< HEAD
+=======
+    position: relative;
+    top:35vh;
+>>>>>>> 6249c458dca7eeb0e59a49db8fd9b1cb67ce6824
     /*This part is important for centering*/
     display: flex;
     align-items: center;
@@ -36,7 +45,7 @@ video
 
   .typing-demo {
     width: 22ch;
-    animation: typing 2s steps(10), blink .5s step-end  alternate;
+    animation: typing 2s steps(9), blink .5s step-end  alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -55,7 +64,14 @@ video
     }
   }
 
+#play
+{
+    position: relative;
+    top: 30vh;
+    text-align: center;
+}
 
+<<<<<<< HEAD
 .riddleContainer {
   color: yellow; 
   position: relative;
@@ -126,4 +142,21 @@ input[type=text]:focus {
 .submitButton:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
+=======
+#buttons
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+#yes
+{
+    padding: 60px;
+}
+
+#no
+{
+    padding: 60px;
+>>>>>>> 6249c458dca7eeb0e59a49db8fd9b1cb67ce6824
 }
