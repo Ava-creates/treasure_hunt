@@ -1,17 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Press+Start+2P&display=swap');
 
 body{
-        position: relative;
-        display: flex;
-        justify-content: center;
-
-        font-size: 85px;
-        font-family: 'Press Start 2P', cursive;
-
-
-        background-image: url("background.jpeg");
-
-        object-fit: fill;
+  position: relative;
+  font-size: 85px;
+  font-family: 'Press Start 2P', cursive;
+  background-image: url("background.jpeg");
+  padding: 1em 0em;
+  object-fit: fill;
 }
 
 
@@ -21,13 +16,12 @@ body{
   font-size: 60px;
   text-align: center;
   top: 0vh;
-
 }
 
 input[type=text] {
-  width: 100%;
+  width: 90vw;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px auto;
   box-sizing: border-box;
   border: 3px solid #ccc;
   -webkit-transition: 0.5s;
@@ -96,14 +90,11 @@ input:valid {
 }
 
 .typing-demo {
-  width: 22ch;
-  animation: typing 2s steps(9), blink .5s step-end  alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-
+  width: 100vw;
 }
-
+#youranswer{
+  border-right: 3px solid yellow
+}
 @keyframes typing {
   from {
     width: 0
