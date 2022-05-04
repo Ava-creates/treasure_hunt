@@ -27,7 +27,6 @@ const answerQuestion = () =>{
   let valid = true;
 
   if (!answer.value) {
-    console.log("ouch");
     const emptyAnswer = document.getElementById("emptyAnswer");
     emptyAnswer.classList.add("visible");
     answer.classList.add("invalid");
