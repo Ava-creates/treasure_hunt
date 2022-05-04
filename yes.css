@@ -16,6 +16,19 @@ video
     right: 5vw;
    
 }
+#map{
+  position: absolute;
+  top:0;
+  right:0;
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+  transition-duration: 2000ms;
+}
+.enlarge{
+  width: 100vw !important;
+  height: auto !important;
+}
 button{
     
     align-items: center;
