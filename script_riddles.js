@@ -33,7 +33,7 @@ const answerQuestion = () =>{
     correctAnswer.classList.remove("visible");
     incorrectAnswer.classList.remove("visible");
   }
-  else if (answer.value!="leaves") {
+  else if (answer.value.toLowerCase()!=="leaves") {
     const incorrectAnswer = document.getElementById("incorrectAnswer");
     incorrectAnswer.classList.add("visible");
     answer.classList.add("invalid");
@@ -54,14 +54,15 @@ const answerQuestion = () =>{
     incorrectAnswer.classList.remove("visible");
 
     submit.style.display = "none";
-    
-    let btn = document.createElement("button");
-    btn.innerHTML = "NEXT";
-    btn.onclick = function () {
-      location.href = "map1.html";
-  }
-    submitButton.appendChild(btn);
-    btn.classList.add('submitButton');
+    if(submitButton.children.length == 1){
+      let btn = document.createElement("button");
+      btn.innerHTML = "NEXT";
+      btn.onclick = function () {
+        location.href = "map1.html";
+      }
+        submitButton.appendChild(btn);
+        btn.classList.add('submitButton');
+      }
   }
 }
 
