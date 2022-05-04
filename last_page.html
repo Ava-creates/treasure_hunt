@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="script_riddles.js" defer></script>
+    <link rel="stylesheet" href="style_riddle.css">
+    <title></title>
+  </head>
+  <body>
+<div class="riddleContainer">
+      <p> Enter the email of a person you want to play next </p>
+   <div class="answerform">
+      <form id="mainform">
+  
+    <input type="text" id="answer" name="answer" autocomplete="off">
+    <div class = "errors" >
+    <span role="alert" id="emptyAnswer" aria-hidden="true">
+   Don't leave this field empty!
+ </span>
+ <span role="alert" id="correctAnswer" aria-hidden="true">
+Email is sent.
+</span>
+</div>
+  </form>
+    </div>
+    <div id="submitButton">
+      <button type="button" class="submitButton" role="button">Submit</button>
+    </div>
+</div>
+  </body>
+  </html>

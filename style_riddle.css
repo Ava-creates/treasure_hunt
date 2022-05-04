@@ -2,10 +2,10 @@
 
 body{
   position: relative;
-  font-size: 85px;
+
   font-family: 'Press Start 2P', cursive;
   background-image: url("background.jpeg");
-  padding: 1em 0em;
+  /* padding: 1em 0em; */
   object-fit: fill;
 }
 
@@ -13,7 +13,7 @@ body{
 .riddleContainer {
   color: yellow;
   position: relative;
-  font-size: 60px;
+  font-size: calc(2vw + 2vh + 1vmin);
   text-align: center;
   top: 0vh;
 }
@@ -72,7 +72,8 @@ input:valid {
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow,transform;
-  font-size: 35px;
+  font-size: calc(2vw + 2vh + 0.5vmin)
+  /* font-size: 35px; */
 }
 
 .submitButton:focus {
@@ -109,9 +110,10 @@ input:valid {
 
 #emptyAnswer {
   display: none;
-  font-size: 0.8em;
   color: lightpink;
-  -webkit-text-stroke: 2px #3A3B3C; 
+  -webkit-text-stroke: 2px #3A3B3C;
+  font-size: calc(2vw + 2vh + 1.5vmin)
+
 }
 
 #emptyAnswer.visible {
@@ -123,9 +125,10 @@ input.invalid {
 }
 #incorrectAnswer {
   display: none;
-  font-size: 0.8em;
   color: lightsalmon;
   -webkit-text-stroke: 2px #3A3B3C;
+  font-size: calc(2vw + 2vh + 2vmin)
+
 }
 
 #incorrectAnswer.visible {
@@ -137,9 +140,9 @@ input.invalid {
 }
 #correctAnswer {
   display: none;
-  font-size: 0.8em;
   color:lightgreen;
   -webkit-text-stroke: 2px #3A3B3C;
+  font-size: calc(2vw + 2vh + 2vmin)
 }
 
 #correctAnswer.visible {
