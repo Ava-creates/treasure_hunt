@@ -1,0 +1,8 @@
+#map{
+    height: auto;
+    width: 20vw;
+    transition-duration: 2000ms;
+}
+.enlarge{
+    width: 100vw !important;
+}
