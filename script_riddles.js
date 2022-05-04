@@ -44,6 +44,8 @@ const answerQuestion = () =>{
     incorrectAnswer.setAttribute("aria-hidden", false);
     incorrectAnswer.setAttribute("aria-invalid", true);
 
+    answer.value = ''
+
     correctAnswer.classList.remove("visible");
     emptyAnswer.classList.remove("visible");
   }
