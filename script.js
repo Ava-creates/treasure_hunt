@@ -14,6 +14,8 @@ window.onload = ()=>{
             },i*500)
         }
     }
-    cover.style.visibility='visible';
-    cover.style.opacity=0;
+    if(cover){
+        cover.style.visibility='visible';
+        cover.style.opacity=0;
+    }
 }
