@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Press+Start+2P&display=swap');
 
-body{
-  position: relative;
 
-  font-family: 'Press Start 2P', cursive;
-  background-image: url("background.jpeg");
-  /* padding: 1em 0em; */
-  object-fit: fill;
+body{
+        font-size: calc(2vw + 2vh + 2vmin);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        font-family: 'Press Start 2P', cursive;
+        background-image: url("background.jpeg");
+        object-fit: fill;
 }
 
 
@@ -26,7 +28,6 @@ input[type=text] {
   border: 3px solid #ccc;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-size: 20px;
   font-family: 'Press Start 2P', cursive;
   outline: none;
 }

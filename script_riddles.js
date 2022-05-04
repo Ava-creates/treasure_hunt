@@ -78,4 +78,3 @@ form.addEventListener('submit',(e)=>{
 })
 
 submit.addEventListener("click", answerQuestion);
-
