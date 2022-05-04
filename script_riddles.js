@@ -1,5 +1,6 @@
 const submit = document.querySelector("button");
 
+
 const form = document.getElementById('mainform')
 
 const textelem = document.getElementById('youranswer')
@@ -56,6 +57,9 @@ const answerQuestion = () =>{
     
     let btn = document.createElement("button");
     btn.innerHTML = "NEXT";
+    btn.onclick = function () {
+      location.href = "map1.html";
+  }
     submitButton.appendChild(btn);
     btn.classList.add('submitButton');
   }
@@ -67,3 +71,4 @@ form.addEventListener('submit',(e)=>{
 })
 
 submit.addEventListener("click", answerQuestion);
+
