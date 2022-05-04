@@ -1,5 +1,6 @@
 const textelem = document.getElementById('pressme')
 const fulltext = 'press me!'
+const cover = document.getElementById('cover')
 window.onload = ()=>{
     for(let i = 0; i < (fulltext.length+1); i++){
         setTimeout(()=>{
@@ -11,4 +12,6 @@ window.onload = ()=>{
             }
         },i*500)
     }
+    cover.style.visibility='visible';
+    cover.style.opacity=0;
 }

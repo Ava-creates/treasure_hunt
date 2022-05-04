@@ -1,5 +1,6 @@
 const submit = document.querySelector("button");
-
+const riddleAnswer = 'leaves'
+const nextPage = 'map1.html'
 
 const form = document.getElementById('mainform')
 
@@ -33,7 +34,7 @@ const answerQuestion = () =>{
     correctAnswer.classList.remove("visible");
     incorrectAnswer.classList.remove("visible");
   }
-  else if (answer.value.toLowerCase()!=="leaves") {
+  else if (answer.value.toLowerCase()!==riddleAnswer) {
     const incorrectAnswer = document.getElementById("incorrectAnswer");
     incorrectAnswer.classList.add("visible");
     answer.classList.add("invalid");
@@ -58,7 +59,7 @@ const answerQuestion = () =>{
       let btn = document.createElement("button");
       btn.innerHTML = "NEXT";
       btn.onclick = function () {
-        location.href = "map1.html";
+        location.href = nextPage;
       }
         submitButton.appendChild(btn);
         btn.classList.add('submitButton');

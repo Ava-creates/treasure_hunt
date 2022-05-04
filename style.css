@@ -20,6 +20,19 @@ a{
 
 }
 
+#cover{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("background.jpeg");
+  opacity: 1;
+  z-index: 100;
+  visibility: visible;
+  transition-duration: 1000ms;
+}
+
 video
 {
     display: block;
