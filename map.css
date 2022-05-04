@@ -8,3 +8,32 @@
     width: 100vw !important;
     cursor: zoom-out !important;
 }
+
+
+#leftfoot, #rightfoot {
+    position:absolute;
+    display:block;
+    border: solid 1px transparent;
+    -webkit-backface-visibility:hidden;
+  }
+  .foot {
+    position:absolute;
+    width:29px;
+    height:29px;
+  }
+  
+  #rightfoot{
+    left:45vw;
+    top:25vh;
+    visibility: hidden;
+  }
+  
+  #leftfoot{
+    left:44vw;
+    top:25vh;
+    visibility: hidden;
+  }
+
+  .footsteps{
+      visibility: hidden;
+  }
