@@ -15,5 +15,6 @@
     border: solid 1px transparent;
     -webkit-backface-visibility:hidden;
     transform: rotate(45deg);
+    display: none;
   }
 

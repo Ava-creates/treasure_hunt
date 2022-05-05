@@ -6,8 +6,18 @@ const rfoot = document.getElementById('rightfoot')
 map.addEventListener('click',()=>{
     if(!map.classList.contains('enlarge')){
         map.classList.add('enlarge')
+        rfoot.style.animation = 'move-right 10s linear infinite';
+        lfoot.style.animation = 'move-left 10s linear infinite';
+        setTimeout(()=>{
+            lfoot.style.display = 'block'
+            rfoot.style.display = 'block'
+        },500)
     }else{
         map.classList.remove('enlarge')
+        rfoot.style.animation = '';
+        lfoot.style.animation = '';
+        lfoot.style.display = 'none'
+        rfoot.style.display = 'none'
     }
 })
 let dynamicStyles = null;
@@ -90,10 +100,4 @@ const makeFrames = (steplist, name)=>{
 
 
 addAnimation(makeFrames(steplist, 'move-left'));
-
-lfoot.style.animation = 'move-left 10s linear infinite';
-
-
 addAnimation(makeFrames(altsteplist, 'move-right'));
-
-rfoot.style.animation = 'move-right 10s linear infinite';
