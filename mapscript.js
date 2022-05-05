@@ -3,6 +3,10 @@ const map = document.getElementById('map')
 const lfoot = document.getElementById('leftfoot')
 const rfoot = document.getElementById('rightfoot')
 
+
+const nav = document.getElementById('nav')
+const {previouspage, nextpage} = nav.dataset
+
 map.addEventListener('click',()=>{
     if(!map.classList.contains('enlarge')){
         map.classList.add('enlarge')
@@ -101,3 +105,8 @@ const makeFrames = (steplist, name)=>{
 
 addAnimation(makeFrames(steplist, 'move-left'));
 addAnimation(makeFrames(altsteplist, 'move-right'));
+
+
+document.getElementById("map").onclick = function () {
+    location.href = nextpage;
+}

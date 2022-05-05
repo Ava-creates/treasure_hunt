@@ -100,3 +100,10 @@ button:hover{
     display:flex;
     left: 9.5vw;
 }
+
+#next
+{
+  display: flex;
+  left: auto;
+  right: 9.5vw;
+}
