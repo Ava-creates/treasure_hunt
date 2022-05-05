@@ -19,11 +19,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/AttrPlugin.min.js" ></script>
 
 
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="map.css">
-    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="mapscript.js" defer></script>
     <title>map1</title>
@@ -31,11 +28,18 @@
 <body>
     <div id="cover"></div>
     <div class="map">
-        <img src="map.png" alt="map of the campus" id="map">
+      <div id="cf">
+         <img class="bottom" src="maps/palms.png" />
+        <img class="top" src="maps/library.png" />
+        <img class="final" id="final" src="maps/palms.png" />
+</div>
+<div class= "text"> <p> click on the next location</p>
+</div>
+        <!-- <img src="map.png" alt="map of the campus" id="map"> -->
     </div>
     <div id="footsteps">
         <img src="https://res.cloudinary.com/dwr6mqx2g/image/upload/v1489592258/leftfoot_hjajqj.svg" id="leftfoot">
-        <img src="https://res.cloudinary.com/dwr6mqx2g/image/upload/v1489592258/rightfoot_fthak3.svg" id="rightfoot">  
+        <img src="https://res.cloudinary.com/dwr6mqx2g/image/upload/v1489592258/rightfoot_fthak3.svg" id="rightfoot">
     </div>
 </body>
 </html>

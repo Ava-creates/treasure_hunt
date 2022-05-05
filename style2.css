@@ -14,11 +14,11 @@ video
     top: 8vh;
     left: 5vw;
     right: 5vw;
-   
+
 }
 
 button{
-    
+
     align-items: center;
     appearance: none;
     background-color: #FCFCFD;
@@ -38,14 +38,14 @@ button{
     padding-left: 16px;
     padding-right: 16px;
     position: absolute;
-    
+
     bottom: 10vh;
-    z-index: 1; 
-    
-   
-    text-align: center; 
-   
-    
+    z-index: 1;
+
+
+    text-align: center;
+
+
     text-align: left;
     text-decoration: none;
     transition: box-shadow .15s,transform .15s;
@@ -58,16 +58,16 @@ button{
 
     visibility: hidden;
   }
-  
+
   button:focus {
     box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   }
-  
+
   button:hover {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     transform: translateY(-2px);
   }
-  
+
   button:active {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
@@ -75,20 +75,18 @@ button{
 
   .video:hover button{
     visibility: visible;
-   
+
 }
 
-
-  
 #previous{
-    
+
     display:flex;
-    left: 9.5vw;    
+    left: 9.5vw;
 }
 
 #next{
     display:flex;
-    left: 78.5vw;    
+    left: 78.5vw;
 }
 
 #play

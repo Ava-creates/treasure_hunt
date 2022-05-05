@@ -1,4 +1,67 @@
-#map{
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Press+Start+2P&display=swap');
+
+body{
+  background-color: #919492;
+  display: flex;
+  justify-content: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+  color: firebrick;
+}
+
+#map {
+  position:relative;
+  width:100%;
+
+}
+
+.text {
+  margin-top: 65%;
+}
+
+#cf img {
+  margin-top:5%;
+  margin-left: 4%;
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+
+@keyframes cfFadeInOut {
+  0%{
+    opacity:0;
+  }
+  1% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+}
+
+#cf img.top {
+animation-name: cfFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 1;
+animation-duration: 5s;
+animation-direction: alternate;
+}
+
+#cf img.final{
+  visibility: hidden;
+}
+
+/* #map{
     height: auto;
     width: 20vw;
     transition-duration: 2000ms;
@@ -7,14 +70,12 @@
 .enlarge{
     width: 100vw !important;
     cursor: zoom-out !important;
-}
+} */
 
 #leftfoot, #rightfoot {
     position:absolute;
     display:block;
     border: solid 1px transparent;
     -webkit-backface-visibility:hidden;
-    transform: rotate(45deg);
-    display: none;
+    transform: rotate(180deg);
   }
-
