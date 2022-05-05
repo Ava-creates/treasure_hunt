@@ -89,5 +89,8 @@ console.log(makeFrames(steplist, 'move-left'))
 
 addAnimation(makeFrames(steplist, 'move-left'));
 addAnimation(makeFrames(altsteplist, 'move-right'));
-rfoot.style.animation = 'move-right 10s linear infinite';
-lfoot.style.animation = 'move-left 10s linear infinite';
+
+
+document.getElementById("map").onclick = function () {
+    location.href = nextpage;
+}

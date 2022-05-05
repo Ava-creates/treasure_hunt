@@ -1,6 +1,8 @@
 const textelem = document.getElementById('pressme')
 const fulltext = 'press me!'
 const cover = document.getElementById('cover')
+
+//script use for making cover appear and pressme text appear slow
 window.onload = ()=>{
     if(textelem){
         for(let i = 0; i < (fulltext.length+1); i++){
