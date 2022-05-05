@@ -1,3 +1,5 @@
+//Extract riddle info from html pages and render them onto the page
+
 const submit = document.querySelector("button");
 const riddle = document.getElementById('riddle')
 const {riddletext, riddleanswer, nextpage} = riddle.dataset
@@ -9,6 +11,7 @@ const form = document.getElementById('mainform')
 
 const textelem = document.getElementById('youranswer')
 const fulltext = 'Your Answer:'
+//make the text appear slowly for dramatic effect
 window.onload = ()=>{
     for(let i = 0; i < (fulltext.length+1); i++){
         setTimeout(()=>{
@@ -22,9 +25,9 @@ window.onload = ()=>{
     }
 }
 
+//handle user input on answerquestion form
 const answerQuestion = () =>{
   const answer = document.getElementById("answer");
-  let valid = true;
 
   if (!answer.value) {
     const emptyAnswer = document.getElementById("emptyAnswer");
@@ -71,6 +74,7 @@ const answerQuestion = () =>{
   }
 }
 
+//trigger answerQuestion on button click or form submit
 form.addEventListener('submit',(e)=>{
   e.preventDefault();
   answerQuestion();
