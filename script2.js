@@ -1,9 +1,15 @@
+
+const nav = document.getElementById('nav')
+const {previouspage, nextpage} = nav.dataset
+
+console.log(previous)
+
 document.getElementById("previous").onclick = function () {
-    location.href = "index.html";
+    location.href = previouspage;
 }
 
 document.getElementById("next").onclick = function () {
-    location.href = "play.html";
+    location.href = nextpage;
 }
 var vid = document.getElementById("myvideo"); 
 var isPlaying = false;

@@ -1,5 +1,9 @@
-document.getElementById("riddle1").onclick = function () {
-    location.href = "page_riddle1.html";
+
+const nav = document.getElementById('nav')
+const {previouspage, nextpage} = nav.dataset
+
+document.getElementById("next").onclick = function () {
+    location.href = nextpage;
 };
 
 var vid = document.getElementById("myvideo"); 
