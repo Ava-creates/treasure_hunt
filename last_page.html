@@ -2,23 +2,29 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="script_riddles.js" defer></script>
+    <script src="script_last.js" defer></script>
     <link rel="stylesheet" href="style_riddle.css">
     <title></title>
   </head>
   <body>
 <div class="riddleContainer">
-      <p> Enter the email of a person you want to play next </p>
+  <p id="riddle"
+    data-riddletext='{"val":["  Enter the email of a person you want to play next"]}'
+    >
+  </p>
    <div class="answerform">
       <form id="mainform">
-  
+
     <input type="text" id="answer" name="answer" autocomplete="off">
     <div class = "errors" >
     <span role="alert" id="emptyAnswer" aria-hidden="true">
    Don't leave this field empty!
  </span>
+ <span role="alert" id="incorrectAnswer" aria-hidden="true">
+Please enter an email
+</span>
  <span role="alert" id="correctAnswer" aria-hidden="true">
-Email is sent.
+We sent an email!
 </span>
 </div>
   </form>
