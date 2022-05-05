@@ -17,3 +17,5 @@ We started with shotting the videos with us asking the user riddles. It was so f
 
 
 <h2>Reflection/Evaluation: This should bookend the initial concept and talk about whether your expectations and goals were met in the process of building the final working version.</h2>
+
+The initial concept and the end website are the same. The expectations and goals were met. 
