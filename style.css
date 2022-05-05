@@ -31,6 +31,7 @@ a{
   z-index: 100;
   visibility: visible;
   transition-duration: 1000ms;
+  pointer-events: none;
 }
 
 video
