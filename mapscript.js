@@ -1,5 +1,7 @@
 const lfoot = document.getElementById('leftfoot')
 const rfoot = document.getElementById('rightfoot')
+const nav = document.getElementById('nav')
+const {previouspage, nextpage} = nav.dataset
 
 function showImage() {
       document.getElementById("final").style.visibility = "visible";
@@ -18,9 +20,10 @@ function addAnimation(body) {
 
   dynamicStyles.sheet.insertRule(body, dynamicStyles.length);
 }
-
-const [startX, startY] = [45,30]
-const rotation = 180;
+const footsteps = document.getElementById('footsteps')
+const rotation = footsteps?.dataset?.rotation || 180
+const startX = footsteps?.dataset?.startx||45
+const startY = footsteps?.dataset?.starty||30
 const [dx, dy] = [0, 7]
 const [lrdx, lrdy] = [2, 3]
 
@@ -85,12 +88,15 @@ const makeFrames = (steplist, name)=>{
    `)
 }
 
-console.log(makeFrames(steplist, 'move-left'))
+document.getElementById("map").onclick = function () {
+    location.href = nextpage;
+}
 
 addAnimation(makeFrames(steplist, 'move-left'));
 addAnimation(makeFrames(altsteplist, 'move-right'));
-
-
-document.getElementById("map").onclick = function () {
-    location.href = nextpage;
+if(rfoot && lfoot){
+  rfoot.style.transform = `rotate(${rotation||180}deg)`;
+  lfoot.style.transform = `rotate(${rotation||180}deg)`;
+  rfoot.style.animation = 'move-right 10s linear infinite';
+  lfoot.style.animation = 'move-left 10s linear infinite';
 }
