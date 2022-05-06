@@ -33,6 +33,47 @@ a{
   transition-duration: 1000ms;
   pointer-events: none;
 }
+.thanksdiv >*{
+  text-align: center;
+}
+.thanksdiv{
+  display: flex;
+  flex-direction: column;
+}
+@keyframes floatdown {
+  1%{
+    top:-100%;
+  }
+  100%{
+    top:100vh;
+  }
+}
+.torch{
+  width: 50px;
+  position: absolute;
+  top: -100%;
+  animation: floatdown linear infinite;
+}
+#torch1{
+  animation-duration: 5s;
+  left: 10%;
+}
+#torch2{
+  animation-duration: 7s;
+  left: 30%;
+}
+#torch3{
+  animation-duration: 3s;
+  left: 50%;
+}
+#torch4{
+  animation-duration: 4s;
+  left: 70%;
+}
+#torch5{
+  animation-duration: 6s;
+  left: 90%;
+}
 
 video
 {

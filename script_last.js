@@ -57,6 +57,7 @@ const answerQuestion = () =>{
     answer.classList.add("valid");
     correctAnswer.setAttribute("aria-hidden", false);
     correctAnswer.setAttribute("aria-valid", true);
+    window.open(`mailto:${answer.value}?subject=CommLab!&body=Play this game! https://ava-creates.github.io/treasure_hunt/`, target="_blank")
 
     emptyAnswer.classList.remove("visible");
     incorrectAnswer.classList.remove("visible");
@@ -79,8 +80,6 @@ function validateEmail(email)
         var re = /\S+@\S+\.\S+/;
         return re.test(email);
     }
-
-console.log(validateEmail('anystring@anystring.anystring'));
 
 //trigger answerQuestion on button click or form submit
 form.addEventListener('submit',(e)=>{
