@@ -67,7 +67,7 @@ const answerQuestion = () =>{
       let btn = document.createElement("button");
       btn.innerHTML = "NEXT";
       btn.onclick = function () {
-        location.href = nextpage;
+        location.href = "thanks.html";
       }
         submitButton.appendChild(btn);
         btn.classList.add('submitButton');
